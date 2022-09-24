@@ -1,6 +1,8 @@
 # linux-iac-projeto1
 
-Infraestrutura como código - Script de criação de estrutura de usuários, diretórios e permissões.
+Infraestrutura como código
+iac1.sh - Script de criação de estrutura de usuários, diretórios e permissões.
+iac1-delete.sh -  Deleta (Desfaz toda configuração do script anterior).
 
 ### Conceito
 
