@@ -13,7 +13,7 @@ groupadd GRP_UZUMAKI
 groupadd GRP_UCHIHA
 groupadd GRP_HYUUGA
 
-echo "Parte 3 - Usuários"
+echo "Parte 3 - Criando todos os Usuários e atribuindo aos grupos"
 
 useradd naruto -m -s /bin/bash -p $(openssl passwd "senha") -G GRP_UZUMAKI
 useradd karin -m -s /bin/bash -p $(openssl passwd "senha") -G GRP_UZUMAKI

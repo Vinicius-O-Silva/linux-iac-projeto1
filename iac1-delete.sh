@@ -18,7 +18,7 @@ groupdel GRP_UZUMAKI
 groupdel GRP_UCHIHA
 groupdel GRP_HYUUGA
 
-echo "Deletando diretírios e arquivos"
+echo "Deletando diretórios e arquivos"
 
 rm -rf /konoha-publico
 rm -rf /uzumaki
