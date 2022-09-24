@@ -2,38 +2,40 @@
 
 echo "Parte 1 - Criando diretórios!"
 
-mkdir /publico
-mkdir /adm
-mkdir /ven
-mkdir /sec
+mkdir /konoha-publico
+mkdir /uzumaki
+mkdir /uchiha
+mkdir /hyuuga
 
 echo "Parte 2 - Criando Grupos de usuários"
 
-groupadd GRP_ADM
-groupadd GRP_VEN
-groupadd GRP_SEC
+groupadd GRP_UZUMAKI
+groupadd GRP_UCHIHA
+groupadd GRP_HYUUGA
 
 echo "Parte 3 - Usuários"
 
-useradd carlos -m -s /bin/bash -p $(openssl passwd "senha") -G GRP_ADM
-useradd maria -m -s /bin/bash -p $(openssl passwd "senha") -G GRP_ADM
-useradd joao -m -s /bin/bash -p $(openssl passwd "senha") -G GRP_ADM
+useradd naruto -m -s /bin/bash -p $(openssl passwd "senha") -G GRP_UZUMAKI
+useradd karin -m -s /bin/bash -p $(openssl passwd "senha") -G GRP_UZUMAKI
+useradd kushina -m -s /bin/bash -p $(openssl passwd "senha") -G GRP_UZUMAKI
 
-useradd debora -m -s /bin/bash -p $(openssl passwd "senha") -G GRP_VEN
-useradd sebastiana -m -s /bin/bash -p $(openssl passwd "senha") -G GRP_VEN
-useradd roberto -m -s /bin/bash -p $(openssl passwd "senha") -G GRP_VEN
+useradd itachi -m -s /bin/bash -p $(openssl passwd "senha") -G GRP_UCHIHA
+useradd madara -m -s /bin/bash -p $(openssl passwd "senha") -G GRP_UCHIHA
+useradd sasuke -m -s /bin/bash -p $(openssl passwd "senha") -G GRP_UCHIHA
 
-useradd josefina -m -s /bin/bash -p $(openssl passwd "senha") -G GRP_SEC
-useradd amanda -m -s /bin/bash -p $(openssl passwd "senha") -G GRP_SEC
-useradd rogerio -m -s /bin/bash -p $(openssl passwd "senha") -G GRP_SEC
+useradd hinata -m -s /bin/bash -p $(openssl passwd "senha") -G GRP_HYUUGA
+useradd neji -m -s /bin/bash -p $(openssl passwd "senha") -G GRP_HYUUGA
+useradd hanabi -m -s /bin/bash -p $(openssl passwd "senha") -G GRP_HYUUGA
 
-echo "Especificando permissões dos diretórios"
+echo "Parte 4 - Especificando permissões dos diretórios"
 
-chown root:GRP_ADM /adm
-chown root:GRP_VEN /ven
-chown root:GRP_SEC /sec
+chown root:GRP_UZUMAKI /uzumaki
+chown root:GRP_UCHIHA /uchiha
+chown root:GRP_HYUUGA /hyuuga
 
-chmod 770 /adm
-chmod 770 /ven
-chmod 770 /sec
-chmod 777 /publico
+chmod 770 /uzumaki
+chmod 770 /uchiha
+chmod 770 /hyuuga
+chmod 777 /konoha-publico
+
+echo "Script executado com sucesso!"
